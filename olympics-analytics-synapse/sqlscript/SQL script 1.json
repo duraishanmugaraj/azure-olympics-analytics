@@ -2,12 +2,12 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "",
+			"query": "use OlympicsDB;\n\nselect * from athletes;\nselect * from coaches;\nselect * from entriesgender;\nselect * from medals;\nselect * from teams;",
 			"metadata": {
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
+				"databaseName": "OlympicsDB",
 				"poolName": "Built-in"
 			},
 			"resultLimit": 5000
