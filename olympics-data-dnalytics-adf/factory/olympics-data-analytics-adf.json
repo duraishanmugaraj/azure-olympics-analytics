@@ -1,0 +1,9 @@
+{
+	"name": "olympics-data-analytics-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "534d4ea8-f4b1-4bcb-9e5a-dae6c20e47db",
+		"tenantId": "f64cb0db-3764-49ad-88e5-053fccfd11f2"
+	}
+}
