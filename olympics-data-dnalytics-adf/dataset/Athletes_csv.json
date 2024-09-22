@@ -2,7 +2,7 @@
 	"name": "Athletes_csv",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "OlympicsHTTP",
+			"referenceName": "HttpServer1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
