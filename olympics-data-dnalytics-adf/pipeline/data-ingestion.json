@@ -117,7 +117,7 @@
 				]
 			},
 			{
-				"name": "Copy-Athletes_copy2",
+				"name": "Copy-EntriesGender",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -174,7 +174,7 @@
 				]
 			},
 			{
-				"name": "Copy-Athletes_copy2_copy1",
+				"name": "Copy-Medals",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -231,7 +231,7 @@
 				]
 			},
 			{
-				"name": "Copy-Athletes_copy2_copy2",
+				"name": "Copy-Teams",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
