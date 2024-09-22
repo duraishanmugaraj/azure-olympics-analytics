@@ -1,0 +1,12 @@
+{
+	"name": "OlympicsHTTP",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/duraishanmugaraj/azure-olympics-analytics/blob/main/Data/",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
