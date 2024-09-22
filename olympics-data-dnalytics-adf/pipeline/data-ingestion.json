@@ -204,7 +204,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -219,13 +219,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Athletes_csv",
+						"referenceName": "Medals_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Athletes",
+						"referenceName": "Medals",
 						"type": "DatasetReference"
 					}
 				]
@@ -276,16 +276,64 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Athletes_csv",
+						"referenceName": "Teams_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Athletes",
+						"referenceName": "Teams",
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Mount ADLS",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Copy-Athletes",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Copy-Coaches",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Copy-EntriesGender",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Copy-Medals",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "Copy-Teams",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
