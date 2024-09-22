@@ -288,7 +288,7 @@
 				]
 			},
 			{
-				"name": "Mount ADLS",
+				"name": "Mount Olympic ADLS",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -330,17 +330,20 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Repos/duraishanmugaraj.r@gmail.com/azure-olympics-analytics/Mounting"
+				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks",
 					"type": "LinkedServiceReference"
 				}
 			},
 			{
-				"name": "Mount ADLS_copy1",
+				"name": "Olympic Data Load",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Mount ADLS",
+						"activity": "Mount Olympic ADLS",
 						"dependencyConditions": [
 							"Succeeded"
 						]
