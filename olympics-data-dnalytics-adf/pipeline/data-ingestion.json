@@ -168,7 +168,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Athletes",
+						"referenceName": "EntriesGender",
 						"type": "DatasetReference"
 					}
 				]
