@@ -162,7 +162,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Athletes_csv",
+						"referenceName": "EntriesGender_csv",
 						"type": "DatasetReference"
 					}
 				],
