@@ -2,14 +2,15 @@
 	"name": "Athletes_csv",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "OlympicsHTTP",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "Athletes.csv"
 			},
 			"columnDelimiter": ",",
 			"rowDelimiter": "\n",
