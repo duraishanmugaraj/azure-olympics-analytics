@@ -379,6 +379,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"snapshot": true
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSynapseArtifacts",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
