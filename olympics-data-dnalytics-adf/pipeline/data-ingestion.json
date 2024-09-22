@@ -105,13 +105,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Athletes_csv",
+						"referenceName": "Coaches_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Athletes",
+						"referenceName": "Coaches",
 						"type": "DatasetReference"
 					}
 				]
