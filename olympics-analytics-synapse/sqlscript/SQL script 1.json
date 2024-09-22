@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "use OlympicsDB;\n\nselect * from athletes;\nselect * from coaches;\nselect * from entriesgender;\nselect * from medals;\nselect * from teams;",
+			"query": "use OlympicsDB;\n\nselect * from athletes;\nselect * from coaches;\nselect * from entriesgender;\nselect * from medals;\nselect * from teams;\n\nselect teamname,COUNT(*) from teams group by teamname order by 2;",
 			"metadata": {
 				"language": "sql"
 			},
