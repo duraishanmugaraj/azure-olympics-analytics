@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sql--olympicanalyticssa",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/3eba4130-4cee-450d-95d2-8a7b3ac68937/resourceGroups/test-rg/providers/Microsoft.Synapse/workspaces/olympicanalyticssa",
+		"groupId": "sql",
+		"fqdns": [
+			"olympicanalyticssa.19a5822a-bec5-4f42-a3f5-e40fb4f9c6e9.sql.azuresynapse.net"
+		]
+	}
+}
