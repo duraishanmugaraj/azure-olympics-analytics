@@ -9,8 +9,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "Athletes.csv"
+				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": ",",
 			"rowDelimiter": "\n",
