@@ -1,0 +1,12 @@
+{
+	"name": "AzureSynapseArtifacts",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://olympicanalyticssa.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/3eba4130-4cee-450d-95d2-8a7b3ac68937/resourceGroups/test-rg/providers/Microsoft.Synapse/workspaces/olympicanalyticssa"
+		}
+	}
+}
